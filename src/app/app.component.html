@@ -1,0 +1,10 @@
+<div class="main">
+  <h2 class="main-head">Weather Application</h2>
+  <form class="main-form" (ngSubmit)="OnSubmit()">
+  <mat-form-field class="input">
+    <mat-label>Search City</mat-label>
+    <input type="text" class="form-control" id="search" name="search" [(ngModel)]="search" matInput>
+  </mat-form-field>
+</form>
+</div>
+<app-weather [FinalData]="FinalData"></app-weather>
